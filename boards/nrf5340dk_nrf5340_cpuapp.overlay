@@ -1,0 +1,18 @@
+/ {
+    chosen {
+        zephyr,settings-partition = &qspi_settings;
+    };
+};
+
+&mx25r64 {
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+        qspi_settings: partition@0 {
+            label = "settings";
+            reg = <0x0 0x10000>;
+        };
+    };
+};
