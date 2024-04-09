@@ -1,6 +1,4 @@
 # Zephyr Basic Settings Demo
-#######################
-
 This sample demonstrates how to use the Zephyr settings subsystem for persistence across reboots. It also uses external flash as its non-volatile storage backend on supported boards.
 
 ## Boards with External Flash Support
